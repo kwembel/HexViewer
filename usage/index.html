@@ -15,14 +15,12 @@
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_custom.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-  <link href="../css/theme_custom.css" rel="stylesheet">
 
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script>
-  <script src="../js/theme_custom.js"></script> 
+  <script src="../js/theme.js"></script> 
 
   
 </head>
@@ -137,8 +135,8 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="usage">Usage</h1>
-<h2 id="overview">Overview</h2>
+              <h1 id="usage"><a name="user-content-usage" href="#usage" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Usage</h1>
+<h2 id="overview"><a name="user-content-overview" href="#overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h2>
 <p>There are 10 commands available via the command palette or by key-bindings.</p>
 <ul>
 <li>Hex Viewer: Toggle Hex View</li>
@@ -153,33 +151,33 @@
 <li>Hex Viewer: Get Checksum</li>
 <li>Hex Viewer: Generate Hash</li>
 </ul>
-<h2 id="hex-viewer-toggle-hex-view">Hex Viewer: Toggle Hex View</h2>
+<h2 id="hex-viewer-toggle-hex-view"><a name="user-content-hex-viewer-toggle-hex-view" href="#hex-viewer-toggle-hex-view" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Toggle Hex View</h2>
 <p>Toggle file in or out of hex view</p>
-<h2 id="hex-viewer-show-hex-inspector">Hex Viewer: Show Hex Inspector</h2>
+<h2 id="hex-viewer-show-hex-inspector"><a name="user-content-hex-viewer-show-hex-inspector" href="#hex-viewer-show-hex-inspector" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Show Hex Inspector</h2>
 <p>Show the Hex Inspector panel.  The Hex Inspector is a panel which shows the current selected byte as different unit types: byte (8 bit), short(signed 8 bit), word (16 bit), int (signed 16 bit), dword (double word 32 bit), longint (signed 32 bit), float (32 bit floating point), double (floating point 64 bit), and binary (8 bit binary).</p>
-<h2 id="hex-viewer-toggle-endiannes-biglittle">Hex Viewer: Toggle Endiannes (Big|Little)</h2>
+<h2 id="hex-viewer-toggle-endiannes-biglittle"><a name="user-content-hex-viewer-toggle-endiannes-biglittle" href="#hex-viewer-toggle-endiannes-biglittle" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Toggle Endiannes (Big|Little)</h2>
 <p>Toggle the parsing of bytes to big or little endian when showing unit types in Hex Inspector</p>
-<h2 id="hex-viewer-set-bits-per-group">Hex Viewer: Set Bits Per Group</h2>
+<h2 id="hex-viewer-set-bits-per-group"><a name="user-content-hex-viewer-set-bits-per-group" href="#hex-viewer-set-bits-per-group" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Set Bits Per Group</h2>
 <p>Allows selection from the quick panel the grouping of bytes by 8, 16, 32, 64, and 128 bits.  This will reload the file with this formatting.  All edits will be lost, so export your changes before you do this.</p>
-<h2 id="hex-viewer-set-bytes-per-line">Hex Viewer: Set Bytes Per Line</h2>
+<h2 id="hex-viewer-set-bytes-per-line"><a name="user-content-hex-viewer-set-bytes-per-line" href="#hex-viewer-set-bytes-per-line" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Set Bytes Per Line</h2>
 <p>Allows selection form the quick panel the the number of bytes to be shown on a line: 8, 10, 16, 24, 32, 48, 64, 128, 256, 512.  If the selected value is not divisible by the &ldquo;bits per group&rdquo;, the closet number of bytes per line will be used.</p>
-<h2 id="hex-viewer-find-by-address">Hex Viewer: Find By Address</h2>
+<h2 id="hex-viewer-find-by-address"><a name="user-content-hex-viewer-find-by-address" href="#hex-viewer-find-by-address" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Find By Address</h2>
 <p>Find the byte at the specified address.  Input is received through the input panel.</p>
-<h2 id="hex-viewer-show-hex-edit-panel">Hex Viewer: Show Hex Edit Panel</h2>
+<h2 id="hex-viewer-show-hex-edit-panel"><a name="user-content-hex-viewer-show-hex-edit-panel" href="#hex-viewer-show-hex-edit-panel" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Show Hex Edit Panel</h2>
 <p>Invoking this command will take the currently selected bytes on a line and display them in an input panel.  They can then be modified and submitted to replace the original bytes.  Strings can also be used by using the &ldquo;s:&rdquo; prefix followed by the equivalent ASCII characters that are to replace the selected bytes.</p>
-<h2 id="hex-viewer-discard-all-edits">Hex Viewer: Discard All Edits</h2>
+<h2 id="hex-viewer-discard-all-edits"><a name="user-content-hex-viewer-discard-all-edits" href="#hex-viewer-discard-all-edits" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Discard All Edits</h2>
 <p>If at any time you would like to discard all of the changes you have currently made to the hex view, you can invoke this command, and a clean hex view will be reloaded.</p>
-<h2 id="hex-viewer-export-bin">Hex Viewer: Export Bin</h2>
+<h2 id="hex-viewer-export-bin"><a name="user-content-hex-viewer-export-bin" href="#hex-viewer-export-bin" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Export Bin</h2>
 <p>This command exports the current hex view to a binary file, and if the option is enabled, it will display the checksum of the newly generated binary file.</p>
-<h2 id="hex-viewer-run-checksum">Hex Viewer: Run Checksum</h2>
+<h2 id="hex-viewer-run-checksum"><a name="user-content-hex-viewer-run-checksum" href="#hex-viewer-run-checksum" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Run Checksum</h2>
 <p>By default, it opens up a quick panel with all available hashes that can be used as a checksum.  When an algorithm is selected, it is used to retrieve the checksum for the current file in hex view mode.</p>
-<h2 id="hex-viewer-generate-hash">Hex Viewer: Generate Hash</h2>
+<h2 id="hex-viewer-generate-hash"><a name="user-content-hex-viewer-generate-hash" href="#hex-viewer-generate-hash" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Generate Hash</h2>
 <p>Shows a quick panel allowing you to select the desired hash, and then shows an input panel that allows you to specify the string to be hashed. A panel is then displayed with your generated hash accoriding to specifications.</p>
-<h2 id="hex-viewer-generate-hash-from-selection">Hex Viewer: Generate Hash from Selection</h2>
+<h2 id="hex-viewer-generate-hash-from-selection"><a name="user-content-hex-viewer-generate-hash-from-selection" href="#hex-viewer-generate-hash-from-selection" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Generate Hash from Selection</h2>
 <p>Allows you to genrate hashes from your current selection(s).  Multiselect regions&rsquo; content will be combined and evaluated together.  If a region contains newlines, they will be hashed as well.</p>
-<h2 id="hex-viewer-abort-hex-conversionexportchecksum">Hex Viewer: Abort (Hex Conversion|Export|Checksum)</h2>
+<h2 id="hex-viewer-abort-hex-conversionexportchecksum"><a name="user-content-hex-viewer-abort-hex-conversionexportchecksum" href="#hex-viewer-abort-hex-conversionexportchecksum" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hex Viewer: Abort (Hex Conversion|Export|Checksum)</h2>
 <p>Abort the given action.</p>
-<h1 id="configurable-settings">Configurable settings</h1>
+<h1 id="configurable-settings"><a name="user-content-configurable-settings" href="#configurable-settings" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Configurable settings</h1>
 <p>Settings are configurable in the hex_viewer.sublime-settings file.</p>
 <ul>
 <li>configure byte highlight color, icon, and style</li>
@@ -211,13 +209,15 @@
 
   <div role="contentinfo">
     <p>
-    <!-- Copyright etc -->
+    
+    Copyright &copy; 2011 - 2015 <a href="https://github.com/facelessuser">Isaac Muse</a>
+    
     </p>
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+    
         </div>
       </div>
 
@@ -237,7 +237,7 @@
 
 <!--
 MkDocs version  : 0.12.1
-Docs Build Date : 2015-04-21 01:25:05.467581
+Docs Build Date : 2015-04-22 04:59:51.166533
 -->
 </body>
 </html>
