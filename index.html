@@ -41,50 +41,57 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href=".">About HexViewer</a>
         
-            <li class="toctree-l1 current">
-                <a class="current" href=".">Home</a>
+            <ul>
+            
+                <li class="toctree-l3"><a href="#hexviewer">HexViewer</a></li>
                 
-                    <ul>
-                    
-                        <li class="toctree-l3"><a href="#hexviewer">HexViewer</a></li>
-                        
-                    
-                        <li class="toctree-l3"><a href="#overview">Overview</a></li>
-                        
-                    
-                        <li class="toctree-l3"><a href="#features">Features</a></li>
-                        
-                    
-                        <li class="toctree-l3"><a href="#installation">Installation</a></li>
-                        
-                    
-                    </ul>
+            
+                <li class="toctree-l3"><a href="#overview">Overview</a></li>
                 
-            </li>
-        
-
-    
-        
-            <li class="toctree-l1 ">
-                <a class="" href="usage/">User Guide</a>
+            
+                <li class="toctree-l3"><a href="#features">Features</a></li>
                 
-            </li>
+            
+            </ul>
         
-
-    
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="installation/">Installation</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="license/">License</a>
-                
-            </li>
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="usage/">User Guide</a>
         
-
-    
-</ul>
-
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="contributing/">Contributing & Support</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="license/">License</a>
+        
+    </li>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -106,7 +113,7 @@
     
       
     
-    <li>Home</li>
+    <li>About HexViewer</li>
     <li class="wy-breadcrumbs-aside">
       
         
@@ -121,26 +128,24 @@
             <div class="section">
               
                 <h1 class="doctitle" id="hexviewer"><a name="user-content-hexviewer" href="#hexviewer" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>HexViewer</h1>
-<p class="doctitle-info">A hex viewer and editor for Sublime Text.<br /></p>
+<p>A hex viewer and editor for Sublime Text.</p>
 <hr />
 <h1 id="overview"><a name="user-content-overview" href="#overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h1>
 <p>Hex Viewer is a plugin for Sublime Text that allows the toggling of a file into a hex viewing mode.  Hex Viewer also supports hex editing.</p>
 <p><img src="http://dl.dropbox.com/u/342698/HexViewer/preview.png" border="0"/></p>
 <h1 id="features"><a name="user-content-features" href="#features" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Features</h1>
 <ul>
-<li>Toggling a file into hex view mode.</li>
-<li>Search bytes by address.</li>
-<li>Customizable highlight of byte and corresponding ASCII representation.</li>
-<li>Customizable byte grouping and bytes per line.</li>
-<li>Hex inspector to view current selected bytes as different unit types (endianness is configurable).</li>
-<li>Display total selected number of bytes and addresses of first group of consecutive bytes in status bar.</li>
-<li>Hex editing.</li>
-<li>Checksumming of files.</li>
-<li>Generate a hash from a entered string or selection.</li>
-<li>Auto open binary files in Hex Viewer (disabled by default).</li>
+<li>View any file (that exist on disk) in a hex format showing both byte and ASCII representation.</li>
+<li>Command to jump to a specific address.</li>
+<li>In place editing of bytes or ASCII chars.</li>
+<li>Highlight selected byte <strong>and</strong> ascii code.</li>
+<li>Inspection panel showing different integer representation at the cursor position.</li>
+<li>Configurable display of byte grouping, bytes per line, endianness.</li>
+<li>Export hex view to a binary file.</li>
+<li>Get the checksum of a given file (various checksums are available).</li>
+<li>Generate checksum/hash from input via panel or text selection.</li>
+<li>Optionally auto convert binary to hex view.</li>
 </ul>
-<h1 id="installation"><a name="user-content-installation" href="#installation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Installation</h1>
-<p>Use Package Control</p>
               
             </div>
           </div>
@@ -148,7 +153,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="usage/" class="btn btn-neutral float-right" title="User Guide"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="installation/" class="btn btn-neutral float-right" title="Installation"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -181,14 +186,15 @@
       
       
       
-        <span style="margin-left: 15px"><a href="usage/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="installation/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
 
-<!--
-MkDocs version      : 0.13.0.dev
-Docs Build Date UTC : 2015-04-29 00:38:23.735333
--->
 </body>
 </html>
+
+<!--
+MkDocs version : 0.13.0.dev
+Build Date UTC : 2015-05-17 03:25:54.381783
+-->
